@@ -61,8 +61,7 @@ export default async function oAuthCallback(
   try {
     const client = await openidClient(req.options)
 
-    /** @type {import("openid-client").TokenSet} */
-    let tokens
+    let tokens: TokenSet
 
     const checks: OAuthChecks = {
       code_verifier: await usePKCECodeVerifier(req, res),
