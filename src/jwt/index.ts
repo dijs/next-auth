@@ -20,7 +20,7 @@ export async function encode({
     .setProtectedHeader({ alg: 'dir', enc: 'A256GCM' })
     .setIssuedAt()
     .setExpirationTime(now() + maxAge)
-    .setJti(crypto.randomUUID() || uuid())
+    .setJti(crypto.randomUUID ? crypto.randomUUID() : uuid())
     .encrypt(encryptionSecret);
 }
 
