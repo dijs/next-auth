@@ -59,7 +59,7 @@
     "futoin-hkdf": "^1.4.2",
     "jose": "^4.1.2",
     "oauth": "^0.9.15",
-    "openid-client": "^5.0.0",
+    "openid-client": "^5.0.1",
     "preact": "^10.5.14",
     "preact-render-to-string": "^5.1.19",
     "uuid": "^8.3.2"
