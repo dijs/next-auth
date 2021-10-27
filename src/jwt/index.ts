@@ -1,5 +1,5 @@
 import crypto from "crypto"
-import jose from "jose"
+import * as jose from "jose"
 import uuid from "uuid"
 import { NextApiRequest } from "next"
 import type { JWT, JWTDecodeParams, JWTEncodeParams } from "./types"
